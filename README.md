@@ -111,7 +111,7 @@ curl localhost:8080/books \
 **Curl Command:**
 
 ```bash
-curl localhost:8080/checkout?id=<id> \
+curl localhost:8080/checkout?:id \
     --request "PATCH"
 ```
 
@@ -130,7 +130,7 @@ Replace `<id>` with the book's ID.
 **Curl Command:**
 
 ```bash
-curl localhost:8080/return?id=<id> \
+curl localhost:8080/return/:id \
     --request "PATCH"
 ```
 
